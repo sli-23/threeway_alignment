@@ -275,6 +275,6 @@ def threeway_align_indel_rate(s1, s2, s3, B, indel_rate, VERBOSE=False):
     and then performs the alignment.
     """
     gap = compute_gap_penalty(indel_rate,P)                            
-    a1,a2,a3,score = threeway_align(s1, s2, s3, B, gap, VERBOSE=VERBOSE) # EXTRA CREDITS: replace with your own algorithm to do alignment
-    return a1,a2,a3,score  # optional (extra credits): replace with your own way to do alignment
+    a1,a2,a3,score = threeway_align(s1, s2, s3, B, gap, VERBOSE=VERBOSE)
+    return a1,a2,a3,score 
 
